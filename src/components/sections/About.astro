@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+import aboutImage from "@/assets/about-image.jpg"
+
+---
+
+  <section aria-label="About Section" class="about" id="about">
+    <h1 class="heading"> <span>about</span> us </h1>
+    <div class="row">
+      <div class="image">
+        <Image 
+          src={aboutImage} 
+          alt="image of coffee beans" 
+          width="1200" 
+          format="avif"
+        />
+        <!-- <img src="./images/about-image.jpg" alt=""> -->
+      </div>
+      <div class="content">
+        <h3>what make our coffee special?</h3>
+        <p>What started as an affinity for coffee and coffee shop culture has grown into a love for sharing quality beverages with anyone and everyone.</p>
+        <a href="#" class="btn">learn more</a>
+      </div>
+    </div>
+  </section>
