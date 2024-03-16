@@ -37,7 +37,7 @@ html::-webkit-scrollbar-thumb {
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: .2s none;
+  transition: .2s linear;
 }
 
 body {
@@ -72,6 +72,16 @@ section {
   cursor: pointer;
 }
 
+.product-btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: var(--main-color);
+  cursor: pointer;
+  
+}
 
 .btn:hover {
   letter-spacing: .2rem;
@@ -93,11 +103,10 @@ section {
 
 .header .logo img {
   height: 6rem;
-  max-width: 6rem;
 
 }
 
-.header .navbar *{
+.header .navbar a{
   margin: 0 1rem;
   font-size: 1.6rem;
   color: #fff;
@@ -112,7 +121,6 @@ header .navbar a:hover {
 
 
 .header .icons div {
-  display: inline-block;
   color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
@@ -142,7 +150,6 @@ header .navbar a:hover {
 
 .header .search-form.active {
   transform: scaleY(1);
-
 }
 
 .header .search-form input {
@@ -224,7 +231,7 @@ header .navbar a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(../assets/main-image.jpg) no-repeat;
+  background: url(./images/main-image.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -293,7 +300,6 @@ header .navbar a:hover {
 
 .menu .box-container .box img {
   height: 10rem;
-  min-width: 14.9rem;
 }
 
 .menu .box-container .box h3 {
@@ -357,7 +363,6 @@ header .navbar a:hover {
 
 .products .box-container .box .image img {
   height: 25rem;
-  max-width: 25rem;
 }
 
 .products .box-container .box .content h3 {

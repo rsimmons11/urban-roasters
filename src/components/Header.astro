@@ -1,12 +1,15 @@
 ---
 import { Image } from "astro:assets"
-import logo from "../assets/logo.png"
+import logo from "@/assets/logo.png"
 import { navData } from "../data/siteData"
+import { Icon } from "astro-icon/components"
+import Link from "./Link.astro";
 ---
 
 <header class="header">
   <a class="logo" href="#">
-    <img src="../assets/black-logo.jpg" alt="logo" width="">
+    <Image src={logo} alt="logo" />
+    <!-- <img src="../assets/black-logo.jpg" alt="logo" width=""> -->
   </a>
 
   <nav class="navbar">
@@ -20,9 +23,15 @@ import { navData } from "../data/siteData"
   </nav>
 
   <div class="icons">
-    <div class="fas fa-search" id="search-btn"></div>
-    <div class="fas fa-shopping-cart" id="cart-btn"></div>
-    <div class="fas fa-bars" id="menu-btn"></div>
+    <div class="fas fa-search" id="search-btn">
+      <Icon name="search" />
+    </div>
+    <div class="fas fa-shopping-cart" id="cart-btn" >
+      <Icon name="shoppingCart" />
+    </div>
+    <div class="fas fa-bars" id="menu-btn">
+      <Icon name="hamburger" />
+    </div>
   </div>
 
   <div class="search-form">
@@ -33,7 +42,7 @@ import { navData } from "../data/siteData"
   <div class="cart-items-container">
     <div class="cart-item">
       <span class="fas fa-times"></span>
-      <img src="./images/coffee-beans-6487104_640.jpg" alt="">
+      <img src="src/assets/coffee-beans-6487104_640.jpg" alt="">
       <div class="content">
         <h3>cart item 01</h3>
         <div class="price">$15.99/-</div>
@@ -42,8 +51,35 @@ import { navData } from "../data/siteData"
   </nav>
 </header>
 
-<style>
-  ul {
-    
+
+<script>
+  let navbar = document.querySelector('.navbar');
+
+  document.querySelector('#menu-btn').addEventListener("click", () => {
+    navbar.classList.toggle('active') 
+    cartContainer.classList.remove('active')
+    searchForm.classList.remove('active')
+  })
+
+  let cartContainer = document.querySelector('.cart-items-container');
+
+  document.querySelector('#cart-btn').addEventListener("click", () => {
+    cartContainer.classList.toggle('active')
+    navbar.classList.remove('active') 
+    searchForm.classList.remove('active')
+  })
+
+  let searchForm = document.querySelector('.search-form');
+
+  document.querySelector('#search-btn').addEventListener("click", () => {
+    navbar.classList.remove('active') 
+    cartContainer.classList.remove('active')
+    searchForm.classList.toggle('active')
+  })
+
+  window.onscroll = () => {
+  navbar.classList.remove('active')
+  cartContainer.classList.remove('active')
+  searchForm.classList.remove('active')
   }
-</style>
+</script>
