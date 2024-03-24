@@ -91,10 +91,13 @@ section {
   z-index: 1000;
 }
 
-.header .logo img {
-  height: 6rem;
-  max-width: 6rem;
+.header a{
+  padding: 0;
 
+}
+
+element.style {
+  padding: 0;
 }
 
 .header .navbar *{
@@ -293,7 +296,8 @@ header .navbar a:hover {
 
 .menu .box-container .box img {
   height: 10rem;
-  min-width: 14.9rem;
+  width: 14.9rem;
+  /* max-width: 14.9rem; */
 }
 
 .menu .box-container .box h3 {
