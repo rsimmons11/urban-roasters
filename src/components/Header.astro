@@ -58,7 +58,7 @@ import { navigate } from "astro:transitions/client";
 
   let navbar = document.querySelector('.navbar');
 
-  document.querySelector('#menu-btn').addEventListener("click", () => {
+  document.querySelector('#menu-btn')?.addEventListener("click", () => {
     if (navbar) navbar.classList.toggle('active') 
     if (cartContainer) cartContainer.classList.remove('active')
     if (searchForm) searchForm.classList.remove('active')
@@ -66,7 +66,7 @@ import { navigate } from "astro:transitions/client";
 
   let cartContainer = document.querySelector('.cart-items-container');
 
-  document.querySelector('#cart-btn').addEventListener("click", () => {
+  document.querySelector('#cart-btn')?.addEventListener("click", () => {
     if (cartContainer) cartContainer.classList.toggle('active')
     if (navbar) navbar.classList.remove('active') 
     if (searchForm) searchForm.classList.remove('active')
@@ -74,7 +74,7 @@ import { navigate } from "astro:transitions/client";
 
   let searchForm = document.querySelector('.search-form');
 
-  document.querySelector('#search-btn').addEventListener("click", () => {
+  document.querySelector('#search-btn')?.addEventListener("click", () => {
     if (navbar) navbar.classList.remove('active') 
     if (cartContainer) cartContainer.classList.remove('active')
     if (searchForm) searchForm.classList.toggle('active')
