@@ -1,47 +1,71 @@
-# Astro Starter Kit: Minimal
+<p align="center">
+<img src="https://img.shields.io/github/forks/rsimmons11/readme-template?color=lgreen&style=for-the-badge">
+<img src="https://img.shields.io/github/stars/rsimmons11/readme-template?color=yellow&style=for-the-badge">
+<img src="https://img.shields.io/github/issues/rsimmons11/readme-template?color=red&style=for-the-badge">
+<img src="https://img.shields.io/github/issues-pr/rsimmons11/readme-template?color=darkorange&label=Pull%20Requests&style=for-the-badge">
+</p>
 
-```sh
-npm create astro@latest -- --template minimal
-```
+# Urban Roasters
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+### [Live Site](https://urban-roasters.netlify.app/)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Restaurant Landing Page](src/assets/urban_roasters.png)
+---
 
-## 🚀 Project Structure
+## Description
 
-Inside of your Astro project, you'll see the following folders and files:
+Whether you're a coffee connoisseur or just dipping your toe into the coffee world, it can be hard to sort through all the options available. We know everyone has different tastes—so let us take the mystery out of choosing your next bag!
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Built With
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+* [Node.js](https://nodejs.org/en/about)
+* [Express.js](https://expressjs.com/)
+* [MongoDB](https://www.mongodb.com/)
+* [Bootstrap](https://getbootstrap.com)
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## Installation
 
-All commands are run from the root of the project, from a terminal:
+`npm install`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Create a `.env` file in config folder and add the following as `key = value`
+  - PORT = 2121 (can be any port example: 3000)
+  - DB_STRING = `your database URI`
+  - CLOUD_NAME = `your cloudinary cloud name`
+  - API_KEY = `your cloudinary api key`
+  - API_SECRET = `your cloudinary api secret`
+ 
+`npm start`
 
-## 👀 Want to learn more?
+---
+       
+## Contact
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+<p align="center">
+  <a href="https://robsimmons.netlify.app/](https://robsimmons.netlify.app/">
+    <img height="50" src="https://github.com/rsimmons11/rsimmons11/assets/131081276/d81fc19e-ab30-4ffc-8f66-5067414619b4"
+  </a>
+  <a href="https://www.linkedin.com/in/robsimmons11">
+    <img height="48" src="https://github.com/rsimmons11/rsimmons11/assets/131081276/42a88d56-eb23-4fa5-b45a-1ae9e237a46c"/>
+  </a>
+  <a href="https://twitter.com/RobertS40455705">
+    <img height="48" src="https://github.com/rsimmons11/rsimmons11/assets/131081276/2b817e52-de07-4a33-b11f-8b15f90cdcee"/>
+  </a>
+  <a href="https://github.com/rsimmons11">
+    <img height="48" src="https://github.com/rsimmons11/rsimmons11/assets/131081276/e078162d-0f6b-414a-8d27-a5b7ec58776f"
+  </a>
+</p>
+
+---
+
+## Acknowledgments
+
+Inspiration, code snippets, etc.
+* [leonnoel](https://github.com/leonnoel)
+* [awesome-readme](https://github.com/matiassingers/awesome-readme)
+* [readme-template](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+* [dbader](https://github.com/dbader/readme-template)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
