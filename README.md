@@ -20,25 +20,9 @@ Whether you're a coffee connoisseur or just dipping your toe into the coffee wor
 
 ## Built With
 
-* [Node.js](https://nodejs.org/en/about)
-* [Express.js](https://expressjs.com/)
-* [MongoDB](https://www.mongodb.com/)
-* [Bootstrap](https://getbootstrap.com)
+* [Astro](https://astro.build/)
+* [TypeScript](https://www.typescriptlang.org/)
 
----
-
-## Installation
-
-`npm install`
-
-- Create a `.env` file in config folder and add the following as `key = value`
-  - PORT = 2121 (can be any port example: 3000)
-  - DB_STRING = `your database URI`
-  - CLOUD_NAME = `your cloudinary cloud name`
-  - API_KEY = `your cloudinary api key`
-  - API_SECRET = `your cloudinary api secret`
- 
-`npm start`
 
 ---
        
